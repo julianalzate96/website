@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.layout{
+    display: flex;
+
+    .body{
+        margin-left: 90px;
+        // padding: 0px 1.0875rem 1.45rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .layout{
+        flex-direction: column;
+        
+        .body{
+            margin: 10vh 0 0;
+            padding:0;
+        }
+    }
+}

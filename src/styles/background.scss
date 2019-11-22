@@ -1,0 +1,40 @@
+.background {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: title;
+  font-size: 1rem;
+
+  .title-container {
+    height: 40vh;
+    background-color: rgb(26, 25, 25);
+    opacity: 0.8;
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      max-width: 1080px;
+      opacity: 1;
+      align-items: center;
+      height: inherit;
+
+      .text {
+        h1 {
+          color: rgb(255, 115, 0);
+          font-size: 3.5em;
+        }
+        h4 {
+          color: whitesmoke;
+          font-size: 1.5em;
+        }
+      }
+
+      .image {
+        border: 1px solid red;
+        width: 30vw;
+      }
+    }
+  }
+}

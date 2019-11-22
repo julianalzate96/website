@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: title;
+  font-size: 2rem;
+  position: fixed;
+  z-index: 100;
+  min-height: 700px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+  }
+
+  h4 {
+    transform-origin: 35% -30%;
+    transform: rotate(-90deg);
+    font-size: 0.45em;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+      font-size: 2em;
+    }
+
+    .material-icons {
+      font-size: 2rem;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+
+    .vertical-line {
+      background-color: white;
+      width: 3px;
+      height: 40%;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      height: 30%;
+      justify-content: space-evenly;
+
+      a{
+        margin: 0;
+        height: 20%;
+        text-align: center;
+      }
+
+      .icon {
+        height: 100%;
+      }
+
+      .icon:hover{
+        cursor: pointer;
+      }
+
+      .github {
+        fill: white;
+      }
+
+      .instagram {
+        fill: black;
+      }
+
+      .linkedin {
+        fill: white;
+      }
+
+      .github:hover {
+        fill: rgb(255, 115, 0);
+      }
+
+      .instagram:hover {
+        .dot {
+          fill: rgb(255, 115, 0);
+        }
+
+        .circle {
+          stroke: rgb(255, 115, 0);
+        }
+
+        .border {
+          stroke: rgb(255, 115, 0);
+        }
+      }
+
+      .linkedin:hover {
+        fill: rgb(255, 115, 0);
+      }
+    }
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@font-face{
+    font-family: title;
+    src: url('./fonts/impact_label/Impact\ Label\ Reversed.ttf');
+}
+
+@media screen and (max-width:768px){
+  header{
+    height: 90px;
+    min-height: unset;
+    width: 100%;
+    flex-direction: row;
+
+    h4{
+      transform: none;
+    }
+
+    .logo{
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 5%;
+
+      h1{
+        margin: 0;
+      }
+    }
+
+    .social-icons{
+      display: none;
+    }
+
+    .contact-me{
+      position: absolute;
+      flex-direction: row;
+      width: 85%;
+      height: inherit;
+      justify-content: flex-end;
+
+      a{
+        margin-right: 2%;
+      }
+    }
+  }
+}
