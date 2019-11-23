@@ -9,8 +9,8 @@ export default function Banner({ background, alt, profile, altProfile }) {
       <div className="title-container">
         <div className="title">
           <div className="text">
-            <h1>I,M JULIAN ALZATE</h1>
-            <h4>I'M A FRONTEND DEVELOPER AND CAT LOVER</h4>
+            <h1>I,M JULIAN ALZATE DIAZ</h1>
+            <h4>I'M A FRONTEND DEVELOPER AND BEER LOVER</h4>
           </div>
         </div>
       </div>
