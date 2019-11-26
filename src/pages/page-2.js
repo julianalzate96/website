@@ -7,8 +7,10 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <form id="form" name="contacg" data-netlify="true">
+      <input type="email" placeholder="Email*" require/>
+      <button type="submit">Submit</button>
+    </form>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
